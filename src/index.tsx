@@ -19,8 +19,15 @@ function App() {
       <QrReader
         delay={300}
         onError={handleError}
-        onScan={handleScan}
-        style={{ width: "100%" }}
+        onResult={(result, error) => {
+          if (!!result) {
+            setReadCode(result?.text);
+          }
+
+          if (!!error) {
+            console.info(error);
+          }
+        }}        style={{ width: "100%" }}
         constraints={{
           facingMode: "environment",
         }}
