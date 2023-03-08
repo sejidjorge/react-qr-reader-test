@@ -10,10 +10,6 @@ function App() {
     setReadCode(data);
   };
 
-  const handleError = (err: any) => {
-    console.error(err);
-  };
-
   return (
     <div style={{ maxWidth: "300px" }}>
       <QrReader
