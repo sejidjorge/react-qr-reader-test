@@ -21,7 +21,7 @@ function App() {
         onScan={handleScan}
         style={{ width: '100%' }}
          constraints={{
-          facingMode: "none",
+          facingMode: "environment",
         }}
       />
     </div>
