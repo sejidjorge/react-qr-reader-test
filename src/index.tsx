@@ -25,7 +25,7 @@ function App() {
           facingMode: "environment",
         }}
       />
-      <code>{readCode}</code>
+      <code>Code: {readCode}</code>
     </div>
   );
 }
