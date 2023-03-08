@@ -20,8 +20,8 @@ function App() {
         onError={handleError}
         onScan={handleScan}
         style={{ width: '100%' }}
-                constraints={{
-          facingMode: "back",
+         constraints={{
+          facingMode: "none",
         }}
       />
     </div>
