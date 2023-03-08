@@ -25,7 +25,7 @@ function App() {
           facingMode: "environment",
         }}
       />
-      <code>Code: {readCode}</code>
+      <code style={{color: 'red'}}>Code: {readCode}</code>
     </div>
   );
 }
