@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { QrReader } from 'react-qr-reader';
+import React from "react";
+import ReactDOM from "react-dom";
+import { QrReader } from "react-qr-reader";
 
-import './index.css';
+import "./index.css";
 
 function App() {
+  const [readCode, setReadCode] = React.useState<string>("");
   const handleScan = (data: string | null) => {
-    alert(data);
-  }
+    setReadCode(data);
+  };
 
   const handleError = (err: any) => {
     console.error(err);
-  }
+  };
 
   return (
     <div>
@@ -19,13 +20,15 @@ function App() {
         delay={300}
         onError={handleError}
         onScan={handleScan}
-        style={{ width: '100%' }}
-         constraints={{
+        style={{ width: "100%" }}
+        constraints={{
           facingMode: "environment",
         }}
       />
+      <code>{readCode}</code>
     </div>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));''
+ReactDOM.render(<App />, document.getElementById("root"));
+("");
