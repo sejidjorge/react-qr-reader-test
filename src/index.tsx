@@ -20,9 +20,10 @@ function App() {
         onError={handleError}
         onScan={handleScan}
         style={{ width: '100%' }}
+        facingMode="environment"
       />
     </div>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));''
