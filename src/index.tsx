@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div style={{maxWidth: "300px"}}>
       <QrReader
         delay={300}
         onError={handleError}
