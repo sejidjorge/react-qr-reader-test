@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <div style={{maxWidth: "300px"}}>
+    <div style={{ maxWidth: "300px" }}>
       <QrReader
         delay={300}
         onError={handleError}
@@ -25,7 +25,7 @@ function App() {
           facingMode: "environment",
         }}
       />
-      <code style={{color: 'red'}}>Code: {readCode}</code>
+      <code style={{ color: "red" }}>Code: {readCode}</code>
     </div>
   );
 }
